@@ -74,6 +74,9 @@ body {
   font-size: 0.875rem;
   color: #6c7289;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex {
