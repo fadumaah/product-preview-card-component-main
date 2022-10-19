@@ -1,0 +1,167 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: #f2eae2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #6c7289;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
+}
+
+.card {
+  background-color: white;
+  margin: 1.5rem 1rem;
+  flex-direction: column;
+  width: 21em;
+  height: auto;
+  border-radius: 0.625em;
+}
+
+section + section {
+  margin: 1.5em;
+}
+
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  margin-bottom: 0.75em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.orig-price {
+  text-decoration: line-through;
+}
+.sale-price {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: #3d8168;
+  font-size: 2em;
+}
+
+p.flex {
+  justify-content: flex-start;
+  gap: 1.25em;
+}
+
+button {
+  color: #ffffff;
+  background-color: #3d8168;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+  height: 2.8125em;
+  font-weight: bold;
+  gap: 0.75em;
+}
+
+button:active,
+button:hover {
+  cursor: pointer;
+  background-color: #1a4032;
+}
+
+@media (min-width: 768px) {
+  .card.flex {
+    flex-direction: row;
+    width: 37.5em;
+    height: 28.125em;
+    margin: none;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
